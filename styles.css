@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .libre-franklin-00 {
     font-family: "Libre Franklin", sans-serif;
     font-optical-sizing: auto;
@@ -12,7 +17,26 @@
 }
 
 .header {
+    display: grid;
     grid-column: 1/-1;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-gap: 20px;
+}
+
+nav > .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    ;
+}
+
+nav > .buttons button {
 }
 
 .sidebar {
