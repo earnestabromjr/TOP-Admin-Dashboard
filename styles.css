@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .libre-franklin-00 {
     font-family: "Libre Franklin", sans-serif;
     font-optical-sizing: auto;
@@ -20,7 +21,7 @@
 .header {
     display: grid;
     gap: 10px;
-    grid-column: 1/-1;
+    grid-column: 2/-1;
 }
 
 .nav {
@@ -29,21 +30,35 @@
     grid-gap: 20px;
 }
 
-nav > .buttons {
+nav>.buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 20px;
     border-radius: 10px;
     justify-content: center;
-    ;
-}
-
-nav > .buttons button {
 }
 
 .sidebar {
-    grid-row: 2/-1;
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    color: #fff;
+    background-color: rgb(41, 145, 214);
 }
+
+.sidebar li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(41, 145, 214);
+    color: #fff;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .content {
     grid-column: 2/-1;
