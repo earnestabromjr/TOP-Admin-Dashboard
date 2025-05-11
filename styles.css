@@ -28,12 +28,12 @@
 
 .search {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .search img {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
 
     margin: 0 20px;
 }
@@ -46,6 +46,7 @@
 /* } */
 
 #search {
+    flex: 1;
     margin: 0 20px;
     border-radius: 10px;
 }
@@ -103,5 +104,8 @@ div.card {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 1px 5px #000;
+    box-shadow:
+        -7px 0 1px -1px #FFD700,
+        0 2px 2px -1px #000;
+
 }
