@@ -1,7 +1,12 @@
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .libre-franklin-00 {
@@ -96,8 +101,7 @@ nav>.buttons {
     background-color: rgb(215, 219, 222);
     padding: 20px;
     justify-content: center;
-    padding: 20px;
-    margin: 0px;
+    margin: 0;
 }
 
 div.card {
