@@ -1,12 +1,15 @@
- @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Libre Franklin", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+}
+
+html {
+    --blue-color: rgb(41, 145, 214);
+}
+
+h1 {
+    margin: 0;
 }
 
 .libre-franklin-00 {
@@ -52,14 +55,32 @@
 
 #search {
     flex: 1;
-    margin: 0 20px;
+    margin: 0.5rem 20px;
     border-radius: 10px;
+    height: 30px;
+}
+
+.header .btn {
+    background-color: var(--blue-color);
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 30px;
+    width: 80px;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
 }
 
 .nav {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    /*grid-template-columns: repeat(3, minmax(100px, 1fr));*/
+    grid-template-columns: 1fr 3fr 1fr;
     grid-gap: 20px;
+    width: auto;
 }
 
 nav>.buttons {
@@ -68,6 +89,11 @@ nav>.buttons {
     margin-left: 20px;
     border-radius: 10px;
     justify-content: center;
+}
+
+img.avatar {
+    width: 40px;
+    height: 40px;
 }
 
 .sidebar {
@@ -96,12 +122,23 @@ nav>.buttons {
     grid-column: 2/-1;
     grid-row: 2/-1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     background-color: rgb(215, 219, 222);
     padding: 20px;
     justify-content: center;
+    /*padding: 20px;*/
     margin: 0;
+    width: auto;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
 }
 
 div.card {
@@ -111,5 +148,4 @@ div.card {
     box-shadow:
         -7px 0 1px -1px #FFD700,
         0 2px 2px -1px #000;
-
 }
